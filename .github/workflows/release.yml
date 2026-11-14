@@ -17,8 +17,6 @@ run-name: "${{ format('release {0}{1}', inputs.bump, inputs.version) }}"
 on:
   push:
     branches: [beta]
-  schedule:
-    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       bump:
